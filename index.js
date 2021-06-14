@@ -109,11 +109,9 @@ Use the getInningScore() function below to do the following:
 
 function getInningScore(callBack) {
   const score = {
-    'Home': 0,
-    'Away': 0
+    'Home': callBack(),
+    'Away': callBack()
   }
-  score.Home = score.Home + callBack();
-  score.Away = score.Away + callBack();
 
   return score;
 }
