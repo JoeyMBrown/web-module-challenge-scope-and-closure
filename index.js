@@ -51,15 +51,18 @@ function counterMaker() {
   }
 }
 
+
+
 const counter1 = counterMaker();
 
 // counter2 code
-let count = 0;
+let count = 0; // 1, 2, 3, 4
 
 function counter2() {
   return count++;
 }
 
+counter2();
 
 /* ⚾️⚾️⚾️ Task 2: inning() ⚾️⚾️⚾️
 Use the inning function below to do the following:
@@ -108,12 +111,10 @@ Use the getInningScore() function below to do the following:
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
 function getInningScore(callBack) {
-  const score = {
+  return {
     'Home': callBack(),
     'Away': callBack()
   }
-
-  return score;
 }
 
 
